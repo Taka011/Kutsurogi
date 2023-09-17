@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Kutsurogi</title>
+    <meta name="description" content="カフェ Kuturogi ">
+    <meta name="robots" content="noindex , nofollow">
+    <!--CSS-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="Images/Kutsurogi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Noto+Sans+JP&family=Noto+Serif+JP&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/destyle.css">
+    <link rel="stylesheet" href="CSS/mainstyle.css">
+    <link rel="stylesheet" href="CSS/tablet.css">
+    <link rel="stylesheet" href="CSS/smartphone.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="fade">
+        <img src="Images/Kutsurogi.png" alt="">
+    </div>
+    <header id="header">
+        <div class="header___inner wrapper">
+            <div class="header__logo">
+                <h2><a href="index.html">Kutsurogi</a></h2>
+            </div>
+            <nav>
+                <ul class="header__list">
+                    <li class="header__list-item"><a href="index.html">HOME</a></li>
+                    <li class="header__list-item"><a href="#concept">CONCEPT</a></li>
+                    <li class="header__list-item"><a href="#menu">MENU</a></li>
+                    <li class="header__list-item"><a href="#news">NEWS</a></li>
+                    <li class="header__list-item"><a href="#access">ACCESS</a></li>
+                    <li class="header__list-item"><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </nav>    
+        </div>
+        <div class="hamburger-menu">
+            <!-- ボタンが押されたかどうかをチェックボックスで判断する　-->
+            <input type="checkbox" id="menu-btn-check">
+            <!-- ハンバーガーボタン　-->
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <!-- メニュー　-->
+            <ul class="list__content" id="list">
+                <li class="list__content-item"><a href="index.html">HOME</a></li>
+                <li class="list__content-item"><a href="#concept">CONCEPT</a></li>
+                <li class="list__content-item"><a href="#menu">MENU</a></li>
+                <li class="list__content-item"><a href="#news">NEWS</a></li>
+                <li class="list__content-item"><a href="#access">ACCESS</a></li>
+                <li class="list__content-item"><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- メインビジュアル　-->
+        <div class="mainvisual">
+            <img src="Images/cafe.jpg" alt="メインコンテンツ">
+            <h2 class="main-title wrapper">Kutsurogi</h2>
+        </div>
+        <!-- コンセプト　-->
+        <section id="concept">
+            <div class="wrapper">
+                <h2 class="sec__title">CONCEPT</h2>
+                <div class="concept__items">
+                    <div class="concept__image">
+                        <img src="Images/cafe3.jpeg" alt="カフェイメージ">
+                    </div>
+                    <div class="concept__text">
+                        <h3 class="concept__text-title">最高の一杯を</h3>
+                        <p class="concept__text-detail">当店のバリスタが厳選したこだわりのコーヒー豆を使用しております。</p>
+                        <p class="concept__text-detail">あなたにとっての最高の一杯を一緒に見つけませんか？</p>
+                    </div>
+                </div>
+                <div class="concept__items wrap">
+                    <div class="concept__image">
+                        <img src="Images/cafe02.jpg" alt="カフェイメージ">
+                    </div>
+                    <div class="concept__text">
+                        <h3 class="concept__text-title">あなたにとって落ち着く場所に</h3>
+                        <p class="concept__text-detail">当店では、テーブル席のほかにワーキングスペースも個別に確保しております。</p>
+                        <p class="concept__text-detail">勉強や仕事、読書などご自由にお使いください。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- メニュー　-->
+        <section id="menu" class="wrapper">
+            <h2 class="sec__title">MENU</h2>
+            <div class="flex">
+                <div class="left">
+                    <h3>Drink</h3>
+                    <dl>
+                        <dt>アメリカンコーヒー</dt>
+                        <dd>￥400</dd>
+                        <dt>カフェラテ</dt>
+                        <dd>￥400</dd>
+                        <dt>カフェオレ</dt>
+                        <dd>￥400</dd>
+                        <dt>カプチーノ</dt>
+                        <dd>￥400</dd>
+                        <dt>エスプレッソ</dt>
+                        <dd>￥500</dd>
+                        <dt>紅茶</dt>
+                        <dd>￥400</dd>
+                        <dt>抹茶ラテ</dt>
+                        <dd>￥500</dd>
+                        <dt>ほうじ茶ラテ</dt>
+                        <dd>￥500</dd>
+                    </dl>
+                </div>
+
+                <div class="right">
+                    <h3>FOOD</h3>
+                    <dl>
+                        <dt>こだわり野菜のサンドウィッチ</dt>
+                        <dd>￥700</dd>
+                        <dt>ふんわり卵のオムライス</dt>
+                        <dd>￥800</dd>
+                        <dt>パスタ</dt>
+                        <dd>￥800</dd>
+                        <dt>バターチキンカレー</dt>
+                        <dd>￥850</dd>
+                        <dt>ふわふわパンケーキ</dt>
+                        <dd>￥700</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <!-- ニュース　-->
+        <section id="news" class="wrapper">
+            <h2 class="sec__title">NEWS</h2>
+            <ul class="news__list">
+                <li class="news__list-item">
+                    <a href="News.html">
+                        <p class="date">2023.04.01</p>
+                        <p class="category"><span>お知らせ</span></p>
+                        <p class="news__title">GWの営業のお知らせ</p>
+                    </a>
+                </li>
+                <li class="news__list-item">
+                    <a href="News.html">
+                        <p class="date">2023.01.01</p>
+                        <p class="category"><span>お知らせ</span></p>
+                        <p class="news__title">新年のご挨拶</p>
+                    </a>
+                </li>
+                <li class="news__list-item">
+                    <a href="News.html">
+                        <p class="date">2022.12.26</p>
+                        <p class="category"><span>お知らせ</span></p>
+                        <p class="news__title">年末年始の営業のお知らせ</p>
+                    </a>
+                </li>
+                <li class="news__list-item">
+                    <a href="News.html">
+                        <p class="date">2022.07.20</p>
+                        <p class="category"><span>お知らせ</span></p>
+                        <p class="news__title">お盆休みのお知らせ</p>
+                    </a>
+                </li>
+            </ul>
+            <a  class="more btn" href="News.html">more</a>
+        </section>
+        <!--　アクセス　-->
+        <section id="access" class="wrapper">
+            <h2 class="sec__title">ACCESS</h2>
+            <div class="access__items">
+                <div class="access__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.9444464464914!2d135.49975558820807!3d34.706581113079494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e695a94b137f%3A0x9242361508850987!2z44CSNTMwLTAwMTUg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65Lit5bSO77yR5LiB55uu77yW4oiS77yR77yWIOS4reW0jueUuumnhQ!5e0!3m2!1sja!2sjp!4v1684883708195!5m2!1sja!2sjp" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="access__text">
+                    <p class="access__text-detail">中崎町駅より徒歩5分<br>
+                        阪急大阪梅田駅より徒歩13分<br>
+                        営業時間: AM9:00 ～ PM9:00 <br>
+                        定休日：火曜日
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- フッター　-->
+    <footer class="footer">
+        <div class="wrapper">
+            <p class="copyright">&copy; 2023 cafe Kutsurogi</p>
+        </div>
+    </footer>
+    <!--JavaScript-->
+    <spcript src="js/script.js"></spcript>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</body>
+
+</html>

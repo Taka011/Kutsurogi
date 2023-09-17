@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kutsurogi</title>
+    <meta name="description" content="カフェ Kuturogi ">
+    <meta name="robots" content="noindex , nofollow">
+    <!--CSS-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="Images/Kutsurogi.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Noto+Sans+JP&family=Noto+Serif+JP&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/destyle.css">
+    <link rel="stylesheet" href="CSS/mainstyle.css">
+    <link rel="stylesheet" href="CSS/tablet.css">
+    <link rel="stylesheet" href="CSS/smartphone.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    
+    <header>
+        <div class="header__inner wrapper">
+            <div class="header__logo">
+                <h2><a href="index.html">Kutsurogi</a></h2>
+            </div>
+            <nav>
+                <ul class="header__list">
+                    <li class="header__list-item"><a href="index.html">HOME</a></li>
+                    <li class="header__list-item"><a href="index.html#concept">CONCEPT</a></li>
+                    <li class="header__list-item"><a href="index.html#menu">MENU</a></li>
+                    <li class="header__list-item"><a href="index.html#news">NEWS</a></li>
+                    <li class="header__list-item"><a href="index.html#access">ACCESS</a></li>
+                    <li class="header__list-item"><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </nav>    
+        </div>
+        <div class="hamburger-menu">
+            <!-- ボタンが押されたかどうかをチェックボックスで判断する　-->
+            <input type="checkbox" id="menu-btn-check">
+            <!-- ハンバーガーボタン　-->
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <!-- メニュー　-->
+            <ul class="list__content" id="list">
+                <li class="list__content-item"><a href="index.html">HOME</a></li>
+                <li class="list__content-item"><a href="index.html#concept">CONCEPT</a></li>
+                <li class="list__content-item"><a href="index.html#menu">MENU</a></li>
+                <li class="list__content-item"><a href="index.html#news">NEWS</a></li>
+                <li class="list__content-item"><a href="index.html#access">ACCESS</a></li>
+                <li class="list__content-item"><a href="Contact.html">CONTACT</a></li>
+        </ul>
+        </div>
+    </header>
+    
+    <div class="mainvisual">
+        <img src="Images/cafe.jpg" alt="メインコンテンツ">
+        <h2 class="main-title wrapper">CONTACT</h2>
+    </div>
+    <div class="contact wrapper">
+        <form action="#" method="POST">
+            <!-- 名前-->
+                <label for="name">お名前<span class="required">必須</span></label>
+                <input type="text" id="name" name="your-name" value="">
+
+            <!--メールアドレス-->
+                <label for="email">メールアドレス<span class="required">必須</span></label>
+                <input type="email"  id="email" name="your-email">
+
+            <!--電話番号-->
+                <label for="text">電話番号<span class="any">任意</span></label>
+                <input type="text"  id="phone" name="your-phone-number">
+
+            <!--お問い合わせ内容-->
+                <label for="message">お問い合わせ内容<span class="required">必須</span></label>
+                <textarea name="your-message" id="message" rows="10"></textarea>
+
+            <!--送信-->
+                <input type="submit" class="button" value="送信">
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <p class="copyright">&copy; 2023 cafe Kutsurogi</p>
+        </div>
+    </footer>
+
+</body>

@@ -1,0 +1,115 @@
+@charset "utf-8";
+@media screen and (max-width: 450px) {
+
+    html,body {
+        width: 100%;
+        text-align: center;
+    }
+    .fade img {
+        width: 60%;
+    }
+    /* ヘッダー　*/
+    #header.active {
+        position: static;
+        animation: none;
+    }
+    .header__logo {
+        width: 60%;
+    }
+    .header__list-item{
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .list__content-item a {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    /* メインビジュアル */
+    .mainvisual {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    /* concept コンテンツ */
+    .concept__items {
+        justify-content: center;
+    }
+    .concept__image {
+        width: 100%;
+    }
+    .concept__image img {
+        width: 100%;
+    }
+    .concept__text {
+        width: 80%;
+    }
+    .concept__text-title {
+        font-size: 24px;
+    }
+    .concept__text-detail {
+        font-size: 14px;
+    }
+    .concept__image::after {
+        box-shadow:  0px 10px 20px 20px #e8e8e8 inset,0px -10px 20px 20px #e8e8e8 inset;
+    }
+    /* access コンテンツ　*/
+    .access__items {
+        display: inline-block;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .access__map {
+        width: 100%;
+        position: relative;
+        height: 0;
+        padding: 50%;
+    }
+    .access__map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .access__text {
+        width: 100%;
+        line-height: 5vh;
+        margin: 0 auto;
+    }
+    .access__text p {
+        padding-top: 0;
+    }
+
+    /* contact */
+    .contact {
+        width: 100%;
+    }
+    /* news */
+    .category {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .date {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .news__list {
+        width: 90%;
+    }
+    /* menu コンテンツ　*/
+    .flex {
+        justify-content: space-between;
+    }
+    .left {
+        width: 40%;
+    }
+    .right {
+        width: 40%;
+    }
+}
