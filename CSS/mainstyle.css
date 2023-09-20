@@ -7,11 +7,12 @@
         color: #777777;
         font-size: 0.95rem;
         font-family: 'BIZ UDPMincho', 'Noto Sans JP','Noto Serif JP','Sawarabi Mincho', sans-serif, serif;
-        background-color: #e8e8e8;
+        background-color: #fff;
         max-width: 100%;
     }
     img {
         width: 100%;
+        max-width: 100%;
     }
     /* 共通 */
     .sec__title {
@@ -39,7 +40,7 @@
     .fade {
         display: none;
         position: fixed;
-        background-color: #e8e8e8;
+        background-color: #fff;
         width: 100vw;
         height: 100vh;
         top: 0;
@@ -77,7 +78,7 @@
         justify-content: space-between;
     }
     .header__logo {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin-top: 10px;
         padding: 10px;
         display: flex;
@@ -106,7 +107,7 @@
     }
     .menu-btn {
         position: fixed;
-        top: 10px;
+        top: 0px;
         right: 10px;
         display: flex;
         height: 60px;
@@ -129,7 +130,7 @@
         height: 3px;
         width: 25px;
         border-radius: 3px;
-        background-color: #eee;
+        background-color: #ccc;
         position: absolute;
         transition: all 0.3s;
     }
@@ -157,10 +158,12 @@
     #menu-btn-check:checked ~ .menu-btn span::before {
         bottom: 0;
         transform: rotate(45deg);
+        background-color: #fff;
     }
     #menu-btn-check:checked ~ .menu-btn span::after {
         top: 0;
         transform: rotate(-45deg);
+        background-color: #fff;
     }
     /*メニュー部分の実装
     ================= */
@@ -240,7 +243,7 @@
     .concept__image::after {
         content: "";
         position: absolute;
-        box-shadow:  0px 0px 40px 40px #e8e8e8 inset,0px -10px 40px 20px #e8e8e8 inset;
+        box-shadow:  0px 0px 40px 40px #fff inset,0px -10px 40px 20px #fff inset;
         left: 0;
         right: 0;
         top: 0;
