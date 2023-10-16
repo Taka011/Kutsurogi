@@ -8,7 +8,7 @@
     <meta name="robots" content="noindex , nofollow">
     <!--CSS-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="Images/Kutsurogi.png">
+    <link rel="icon" href="Images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Noto+Sans+JP&family=Noto+Serif+JP&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
@@ -60,22 +60,23 @@
         <h2 class="main-title wrapper">CONTACT</h2>
     </div>
     <div class="contact wrapper">
+        <h2 class="contact__text">当店に関するお問い合わせは以下のフォームからお願いします。</h2>
         <form action="#" method="POST">
             <!-- 名前-->
                 <label for="name">お名前<span class="required">必須</span></label>
-                <input type="text" id="name" name="your-name" value="">
+                <input type="text" id="name" name="your-name" value="" placeholder="例: 山田太郎">
 
             <!--メールアドレス-->
                 <label for="email">メールアドレス<span class="required">必須</span></label>
-                <input type="email"  id="email" name="your-email">
+                <input type="email"  id="email" name="your-email" placeholder="xxxxx@email.co.jp">
 
             <!--電話番号-->
-                <label for="text">電話番号<span class="any">任意</span></label>
-                <input type="text"  id="phone" name="your-phone-number">
+                <label for="phone">電話番号<span class="any">任意</span></label>
+                <input type="text"  id="phone" name="your-phone-number" placeholder="0123-456-789">
 
             <!--お問い合わせ内容-->
                 <label for="message">お問い合わせ内容<span class="required">必須</span></label>
-                <textarea name="your-message" id="message" rows="10"></textarea>
+                <textarea id="message" name="your-message"  rows="10"></textarea>
 
             <!--送信-->
                 <input type="submit" class="button" value="送信">

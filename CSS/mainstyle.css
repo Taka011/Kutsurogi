@@ -3,6 +3,7 @@
     html {
         scroll-behavior: smooth;
     }
+
     body {
         color: #777777;
         font-size: 0.95rem;
@@ -10,33 +11,35 @@
         background-color: #fff;
         max-width: 100%;
     }
+
     img {
         width: 100%;
         max-width: 100%;
     }
-    /* 共通 */
+    /* 共通項目*/
     .sec__title {
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin: 10px auto;
         padding: 30px 0;
     }
+
     .wrapper {
         text-align: center;
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 30px;
     }
+
     .btn {
         font-size: 1rem;
     }
+    
     .btn:hover {
         color: #333333;
     }
-    .wrap {
-        flex-direction: row-reverse;
-        margin-top: 20%;
-    }
+
+/* ロード画面 */
     .fade {
         display: none;
         position: fixed;
@@ -50,9 +53,11 @@
         align-items: center;
         z-index: 999;
     }
+
     .fade img {
         width: 20%;
     }
+
     @keyframes fd-in {
         0% {
             opacity: 0;
@@ -64,6 +69,7 @@
             opacity: 1;
         }
     }
+
     /* ヘッダー */
     #header.active {
         position: fixed;
@@ -73,10 +79,12 @@
         animation: fd-in ease-in 1s;
         z-index: 9999;
     }
+
     .header__inner {
         display: flex;
         justify-content: space-between;
     }
+
     .header__logo {
         font-size: 1.5rem;
         margin-top: 10px;
@@ -92,10 +100,12 @@
         top: 30px;
         right: 10px;
     }
+
     .header__list-item {
         padding: 0 20px;
         font-size: 0.9rem;
     }
+
     .header__list-item:hover {
         color: #333333;
         ;
@@ -105,6 +115,7 @@
     .hamburger-menu {
         display: none;
     }
+
     .menu-btn {
         position: fixed;
         top: 0px;
@@ -117,6 +128,7 @@
         z-index: 90;
         background-color: transparent;
     }
+
     .menu-btn:hover {
         cursor: pointer;
     }
@@ -134,9 +146,11 @@
         position: absolute;
         transition: all 0.3s;
     }
+
     .menu-btn span:before {
         bottom: 8px;
     }
+
     .menu-btn span:after {
         top: 8px;
     }
@@ -160,11 +174,13 @@
         transform: rotate(45deg);
         background-color: #fff;
     }
+
     #menu-btn-check:checked ~ .menu-btn span::after {
         top: 0;
         transform: rotate(-45deg);
         background-color: #fff;
     }
+
     /*メニュー部分の実装
     ================= */
     .list__content {
@@ -179,13 +195,16 @@
         transition: all 0.5s; /*アニメーションを滑らかにする*/
         color: #fff;
     }
+
     .list__content {
         padding: 70px 10px 0;
     }
+
     .list__content-item {
         border-bottom: solid 1px #ffffff;
         list-style: none;
     }
+
     .list__content-item a {
         display: block;
         width: 100%;
@@ -196,17 +215,18 @@
         padding: 20px 10px;
         position: relative;
     }
+
     #menu-btn-check:checked ~ .list__content {
         left: 0%; /*メニューを画面内へ動かす*/
     }
     
     /*　メインビジュアル　*/
     .mainvisual {
-        width: 90%;
-        box-sizing: border-box;
+        width: 88%;
         position: relative;
-        margin: 20px 0 200px 0;
+        margin: 60px 0 200px 0;
     }
+
     .mainvisual img {
         object-fit: cover;
         object-position: center;
@@ -215,6 +235,7 @@
         filter: brightness(0.5);
         border-radius: 0 20% 20% 0;
     }
+
     .main-title {
         width: 100%;
         font-size: 3rem;
@@ -225,21 +246,25 @@
         right: 0;
         letter-spacing: 0.05em;
     }
+
     /* Conceptコンテンツ　*/
     #concept {
         margin-bottom: 200px;
     }
+
     .concept__items {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         column-gap: 30px;
+        padding: 0 60px;
     }
+
     .concept__image {
-        width: 60%;
+        width: 100%;
         position: relative;
         height: 100%;
     }
+
     .concept__image::after {
         content: "";
         position: absolute;
@@ -251,29 +276,40 @@
         width: 100%;
         height: auto;
     }
+
     .concept__image img {
         vertical-align: bottom;
         bottom: 0;
         z-index: -1;
         position: relative;
     }
+
     .concept__text {
-        width: 40%;
-        text-align: left;
+        width: 80%;
+        margin: 0 40px;
     }
+
     .concept__text-title {
         font-size: 32px;
         font-weight: 900;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
+
     .concept__text-detail {
         line-height: 2;
+    }
+/* Conceptコンテンツを反転する */
+    .wrap {
+        flex-direction: row-reverse;
+        margin-top: 200px;
+        padding: 0 60px;
     }
 
     /* Newsコンテンツ */
     #news {
         margin-bottom: 200px;
     }
+
     .more {
         position: relative;
         left: 40%;
@@ -354,22 +390,29 @@
         align-items: center;
         margin-bottom: 20px;
     }
+
     .access__map {
         width: 100%;
     }
+
     .access__text {
         width: 100%;
     }
+
     .access__text-detail {
         line-height: 3;
         text-align: left;
         display: flex;
         justify-content: center;
     }
+
     /* CONTACT */
     .contact {
         max-width: 1000px;
         margin: 30px auto;
+    }
+    .contact__text {
+        margin-bottom: 60px;
     }
     /* 必須　装飾　*/
     .required {
@@ -394,49 +437,50 @@
     /* フォーム関連　*/
     form {
         position: relative;
+        margin: 0 auto;
     }
+
     label {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 20px;
         display: block;
         text-align: left;
-        padding: auto;
     }
-    input {
-        margin-bottom: 30px;
-        text-align: left;
-    }
+
     input[type="text"],
     input[type="email"],
     textarea {
-        border: 1px solid #999999;
-        border-radius: 5px;
+        border: 1px solid #aaa;
+        border-radius: 10px;
         padding: 10px;
-        font-size: 1rem;
-    }
-    input[type="text"],
-    input[type="email"] {
-        width: 60%;
-    }
-    textarea {
         width: 60%;
         text-align: left;
+        margin-bottom: 20px;
     }
+
     input[type="submit"] {
         cursor: pointer;
-        background-color: #999999;
+        background-color: #aaa;
         color: #fff;
         padding: 20px 40px;
-        border-radius: 50px;
+        border-radius: 40px;
+        font-size: 0.8rem;
     }
+
     input[type="submit"]:hover {
         opacity: 0.8;
     }
+
+    input::placeholder {
+        opacity: 0.5;
+    }
+
     .button {
         text-align: center;
         margin: 20px auto;
         display: block;
     }
+
     /* フッター */
     .footer {
         padding: 20px;
